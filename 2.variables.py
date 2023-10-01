@@ -62,3 +62,72 @@ print(_my_var)
 print(myvar)
 print(MyVar)
 print(myvar2)
+
+#----------------------------------------------------------------------------------------------
+#Assign multi values
+#Example
+
+x , y, z = 1 , "Abhi", "Nashik"
+
+print(x)
+print(y)
+print(z)
+
+#------------------------------------------------------------------------------------------------
+
+# one value to multiple
+x=y=z="red"
+print(x)
+print(y)
+print(z)
+
+#----------------------------------------------------------------------------------------------
+
+# Unpacked collection
+car = ["Tata","Mahindra","Maruti"]
+x,y,z=car
+print(x)
+print(y)
+print(z)
+
+# -----------------------------------------------------------------------------------------------
+# Output variable
+
+# The Python print() function is often used to output variables.
+
+x= "hello "
+y= " python"
+print( x + y)
+
+#-------------------------------------------------------------------------------------------------
+# Global variables : variables that are created a outside a function are known as global variables.
+#example
+
+x = " this is global variable test "
+
+def myfunc():
+   print("hii abhi" + x)
+myfunc()
+
+# -------------------------------------------------------------------------------------------------
+#local variable : Variable that are created inside a finction is known as local variables.
+#example
+def myfun():
+   x = "this is local variable test"
+   print("hii abhi " + x)
+myfun()
+
+# -----------------------------------------------------------------------------------------------------
+#global Kyword
+# To create a global variable inside a function, you can use the global keyword.
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+
+# -------------------------------------------------------------------------------------------------------
+
+  
